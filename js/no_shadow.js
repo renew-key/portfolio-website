@@ -1,6 +1,7 @@
 (function () {
   const header = document.getElementById("header");
-  console.log(header);
+  // console.log(header);
+  header.style.boxShadow = "none";
   window.addEventListener("scroll", () => {
     if (window.scrollY == 0) {
       header.style.boxShadow = "none";
