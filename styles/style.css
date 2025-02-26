@@ -110,7 +110,7 @@ body main section.resume {
   padding: 2rem;
 }
 body main section.resume section.table {
-  --bs-table-bg:none;
+  --bs-table-bg: none;
   flex: 5 0 500px;
   padding: 2rem;
 }
@@ -166,11 +166,34 @@ body main section.resume section.picture div.Rect3 {
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  body main section.main-area {
+    padding: 1rem;
+  }
   body main section.resume {
+    padding: 0rem;
+    overflow-x: hidden;
+  }
+  body main section.resume section.table {
     overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
     padding: 0rem;
   }
-  body main section.resume section.picture div.Rect1, body main section.resume section.picture div.Rect2, body main section.resume section.picture div.Rect3 {
+  body main section.resume section.table table {
+    min-width: 600px;
+  }
+  body main section.resume section.table table tr {
+    width: 100%;
+  }
+  body main section.resume section.picture {
+    overflow-x: hidden;
+  }
+  body main section.resume section.picture div.Rect1,
+  body main section.resume section.picture div.Rect2,
+  body main section.resume section.picture div.Rect3 {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
