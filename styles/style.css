@@ -18,6 +18,7 @@ body header {
   z-index: 5;
   box-shadow: 0 10px 6px -6px #777;
   padding-top: 1rem;
+  padding-bottom: 0.2rem;
   background-color: white;
 }
 body header nav ul {
@@ -107,8 +108,6 @@ body main section.resume {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
-  justify-content: center;
-  align-items: center;
 }
 body main section.resume section.table {
   --bs-table-bg:none;
@@ -167,14 +166,9 @@ body main section.resume section.picture div.Rect3 {
 }
 
 @media screen and (max-width: 700px) {
-  body {
-    overflow-x: hidden;
-  }
-  body main section.about-me section.description {
-    width: 90%;
-  }
   body main section.resume {
     overflow-x: auto;
+    padding: 0rem;
   }
   body main section.resume section.picture div.Rect1, body main section.resume section.picture div.Rect2, body main section.resume section.picture div.Rect3 {
     display: none;

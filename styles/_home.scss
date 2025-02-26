@@ -65,8 +65,8 @@ body{
            display: flex;
            flex-wrap: wrap;
            padding: 2rem;
-           justify-content: center;
-           align-items: center;
+        //    justify-content: center;
+        //    align-items: center;
        
            section.table{
             --bs-table-bg:none;
@@ -133,15 +133,16 @@ body{
 
 @media screen and (max-width:700px) {
     body{
-        overflow-x: hidden;
         main{
-            section.about-me{
-                section.description{
-                    width: 90%;
-                }
-            }
+            // section.about-me{
+            //     section.description{
+            //         width: 90%;
+            //     }
+            // }
             section.resume {
                 overflow-x: auto;
+                padding: 0rem;
+               
                 section.picture{
                     div.Rect1,div.Rect2,div.Rect3{
                         display: none;
